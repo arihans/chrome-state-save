@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="/styles/popup.css" rel="stylesheet" />
+		<title>Save Tabs</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header__logo-text">
+				<img class="header__logo" src="/images/save-tabs-header__icon.png" />
+				<div class="header__text">Save Tabs</div>
+			</div>
+			<button type="button" id="close-popup" class="button">
+				<img src="/images/close-popup__icon.png" />
+			</button>
+		</div>
+
+		<div class="date-time">
+			<div id="date" class="date-time-box">
+				<div id="date__icon" class="date-time__icon-box">
+					<img src="/images/ic_today_black_18dp.png" />
+				</div>
+				<div id="date__text" class="date-time__text">12 Jan 2019</div>
+			</div>
+
+			<div id="time" class="date-time-box">
+				<div id="time__icon" class="date-time__icon-box">
+					<img src="/images/ic_access_time_black_18dp.png" />
+				</div>
+				<div id="time__text" class="date-time__text">23 : 13</div>
+			</div>
+		</div>
+
+		<div class="open-tabs-scrollbar">
+			<div class="open-tab">
+				<img src="/images/brand-logo__icon16.png" class="open-tab__logo" />
+				<div class="open-tab__title">Google Fonts</div>
+				<button type="button" class="button tab-close">
+					<img src="/images/ic_cancel_black_18dp.png" />
+				</button>
+			</div>
+		</div>
+
+		<form class="label-tag-form">
+			<div class="input-field">
+				<input type="text" name="label" placeholder="Add Label (Optional)" />
+				<input type="text" name="tag" placeholder="tag1, tag2, .. (Optional)" />
+			</div>
+			<button type="submit" class="button save">
+				<img src="/images/ic_save_white_24dp.png" />
+				<div id="save-button__text">SAVE</div>
+			</button>
+		</form>
+
+		<div class="footer">
+			<button class="button settings">
+				<img src="/images/ic_settings_black_24dp.png" />
+			</button>
+			<button class="button saved-states">
+				<div id="saved-states-button__text">Saved States</div>
+				<img src="/images/ic_open_in_new_white_24dp.png" />
+			</button>
+		</div>
+	</body>
+</html>

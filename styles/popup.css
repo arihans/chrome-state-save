@@ -1,0 +1,294 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 
+----------------------------------------------------------------------
+Global 
+*/
+body {
+	width: 300px;
+	min-width: 275px;
+	background-color: #dadadaff;
+	overflow: hidden;
+	position: fixed;
+	color: black;
+	padding: 7px;
+	box-shadow: 0 0 10px #363636;
+}
+
+.button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+
+::placeholder {
+	font-family: arial;
+	font-size: 12px;
+	color: black;
+}
+
+/* 
+----------------------------------------------------------------------
+Header 
+*/
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	max-height: 40px;
+	overflow: hidden;
+	margin-top: 4px;
+	margin-bottom: 15px;
+}
+
+.header__logo-text {
+	max-width: 100%;
+	max-height: 100%;
+	align-items: center;
+	display: flex;
+}
+
+.header__logo {
+	max-width: 22px;
+	height: 80%;
+	margin-right: 7px;
+}
+
+.header__text {
+	font-family: cursive;
+	font-size: 100%;
+	font-weight: 350;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+#close-popup {
+	max-width: 35px;
+	height: 100%;
+}
+
+#close-popup > img {
+	width: 95%;
+	height: 95%;
+}
+
+/* 
+----------------------------------------------------------------------
+Date-Time
+*/
+.date-time {
+	position: relative;
+	display: flex;
+	margin-right: 30px;
+	margin-left: 0;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.date-time-box {
+	position: relative;
+	max-height: 23px;
+	width: auto;
+	background: #f4f4f4c7;
+	display: flex;
+	overflow: hidden;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#date {
+	margin-right: 15px;
+}
+
+.date-time__icon-box {
+	padding: 2px;
+	background-color: #79c497;
+}
+
+.date-time__icon-box > img {
+	max-width: 100%;
+	max-height: 20px;
+}
+
+.date-time__text {
+	font-family: Arial;
+	font-size: 84%;
+	text-align: center;
+	color: #505050;
+	width: 100%;
+	padding: 3px;
+	overflow: hidden;
+}
+
+/*
+---------------------------------------------------------------------- 
+Open-Tabs-ScrollBar
+*/
+.open-tabs-scrollbar {
+	min-width: 100%;
+	background-color: #ffffff;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3px;
+	margin-bottom: 15px;
+}
+
+.open-tab {
+	width: 95%;
+	height: 25px;
+	background: #dadada;
+	display: flex;
+	border-radius: 12px 12px 12px 12px;
+	padding: 3px;
+	align-items: center;
+	overflow: hidden;
+	justify-content: space-between;
+}
+
+.open-tab__logo {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+
+.open-tab__title {
+	font-family: Arial;
+	font-size: 80%;
+	text-align: center;
+	color: #525252;
+}
+
+.button.tab-close {
+	align-items: center;
+	height: 70%;
+	width: auto;
+	overflow: hidden;
+}
+
+.button.tab-close > img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* 
+----------------------------------------------------------------------
+Label-Tag-Form
+*/
+.label-tag-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.input-field {
+	width: 97%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.input-field > input {
+	width: 100%;
+	max-height: 30px;
+	padding: 4px;
+	border-color: #3e3e3ea6;
+	background: transparent;
+	color: #3e3e3e;
+	border-radius: 5px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+
+.button.save {
+	width: 95%;
+	height: 35px;
+	background: #363636;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.button.save > img {
+	max-width: 25px;
+	max-height: 60%;
+	margin-right: 5px;
+	padding: 2px;
+}
+
+#save-button__text {
+	font-family: arial;
+	font-weight: bold;
+	font-size: 100%;
+	color: #dbdbdb;
+}
+
+/*
+----------------------------------------------------------------------
+Footer
+*/
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background: #bdbdbd;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.button.settings {
+	max-width: 37px;
+	overflow: hidden;
+}
+
+.button.settings > img {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.button.saved-states {
+	height: 90%;
+	width: 50%;
+	max-width: 120px;
+	max-height: 35px;
+	background: #258e4e;
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	margin-right: 5px;
+	justify-content: center;
+}
+
+#saved-states-button__text {
+	font-family: cursive;
+	font-size: 75%;
+	color: white;
+	margin-right: 4px;
+}
+
+.button.saved-states > img {
+	width: 0.8rem;
+	height: 0.8rem;
+}
