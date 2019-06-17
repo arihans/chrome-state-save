@@ -4,9 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link href="/styles/popup.css" rel="stylesheet" />
+		<link type="text/css" href="/styles/popup.css" rel="stylesheet" />
 		<title>Save Tabs</title>
 	</head>
+
 	<body>
 		<div class="header">
 			<div class="header__logo-text">
@@ -23,26 +24,28 @@
 				<div id="date__icon" class="date-time__icon-box">
 					<img src="/images/ic_today_black_18dp.png" />
 				</div>
-				<div id="date__text" class="date-time__text">12 Jan 2019</div>
+				<div id="date__text" class="date-time__text"></div>
 			</div>
 
 			<div id="time" class="date-time-box">
 				<div id="time__icon" class="date-time__icon-box">
 					<img src="/images/ic_access_time_black_18dp.png" />
 				</div>
-				<div id="time__text" class="date-time__text">23 : 13</div>
+				<div id="time__text" class="date-time__text"></div>
 			</div>
 		</div>
 
-		<div class="open-tabs-scrollbar">
+		<div id="open-tabs-scrollbar"></div>
+
+		<template id="open-tab-template">
 			<div class="open-tab">
-				<img src="/images/brand-logo__icon16.png" class="open-tab__logo" />
-				<div class="open-tab__title">Google Fonts</div>
+				<img class="open-tab__favicon" />
+				<div class="open-tab__title"></div>
 				<button type="button" class="button tab-close">
 					<img src="/images/ic_cancel_black_18dp.png" />
 				</button>
 			</div>
-		</div>
+		</template>
 
 		<form class="label-tag-form">
 			<div class="input-field">
@@ -65,4 +68,6 @@
 			</button>
 		</div>
 	</body>
+
+	<script type="text/javascript" src="/javascript/popup.js"></script>
 </html>

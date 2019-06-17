@@ -8,9 +8,11 @@
 ----------------------------------------------------------------------
 Global 
 */
+
 body {
-	width: 300px;
+	width: 340px;
 	min-width: 275px;
+	max-height: 450px;
 	background-color: #dadadaff;
 	overflow: hidden;
 	position: fixed;
@@ -31,7 +33,7 @@ body {
 ::placeholder {
 	font-family: arial;
 	font-size: 12px;
-	color: black;
+	color: #525252;
 }
 
 /* 
@@ -48,6 +50,7 @@ Header
 	overflow: hidden;
 	margin-top: 4px;
 	margin-bottom: 15px;
+	color: #313131;
 }
 
 .header__logo-text {
@@ -59,14 +62,14 @@ Header
 
 .header__logo {
 	max-width: 22px;
+	width: 80%;
 	height: 80%;
-	margin-right: 7px;
+	margin-right: 9px;
 }
 
 .header__text {
-	font-family: cursive;
+	font-family: sans-serif;
 	font-size: 100%;
-	font-weight: 350;
 	text-align: center;
 	height: 100%;
 	width: 100%;
@@ -90,14 +93,14 @@ Date-Time
 	position: relative;
 	display: flex;
 	margin-right: 30px;
-	margin-left: 0;
+	margin-left: 3px;
 	align-items: center;
 	margin-bottom: 12px;
 }
 
 .date-time-box {
 	position: relative;
-	max-height: 23px;
+	max-height: 20px;
 	width: auto;
 	background: #f4f4f4c7;
 	display: flex;
@@ -121,7 +124,7 @@ Date-Time
 
 .date-time__text {
 	font-family: Arial;
-	font-size: 84%;
+	font-size: 80%;
 	text-align: center;
 	color: #505050;
 	width: 100%;
@@ -133,30 +136,38 @@ Date-Time
 ---------------------------------------------------------------------- 
 Open-Tabs-ScrollBar
 */
-.open-tabs-scrollbar {
+#open-tabs-scrollbar {
 	min-width: 100%;
 	background-color: #ffffff;
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3px;
+	padding: 2px;
+	padding-bottom: 3px;
+	padding-top: 3px;
 	margin-bottom: 15px;
+	margin-left: 3px;
 }
 
 .open-tab {
-	width: 95%;
-	height: 25px;
+	position: relative;
+	width: 97%;
+	height: 27px;
 	background: #dadada;
 	display: flex;
+	align-items: center;
 	border-radius: 12px 12px 12px 12px;
 	padding: 3px;
-	align-items: center;
 	overflow: hidden;
-	justify-content: space-between;
+	justify-content: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
-.open-tab__logo {
+.open-tab__favicon {
+	position: absolute;
+	left: 0;
 	max-height: 100%;
 	max-width: 100%;
 	vertical-align: middle;
@@ -164,22 +175,28 @@ Open-Tabs-ScrollBar
 }
 
 .open-tab__title {
-	font-family: Arial;
-	font-size: 80%;
+	font-family: courier;
+	font-size: 85%;
 	text-align: center;
-	color: #525252;
+	vertical-align: middle;
+	color: #474747;
 }
 
 .button.tab-close {
-	align-items: center;
-	height: 70%;
+	position: absolute;
+	right: 0;
+	vertical-align: middle;
+	height: 65%;
 	width: auto;
 	overflow: hidden;
 }
 
 .button.tab-close > img {
+	display: block;
+	opacity: 0.6;
 	max-height: 100%;
-	max-width: 100%;
+	height: auto;
+	width: auto;
 }
 
 /* 
@@ -206,9 +223,9 @@ Label-Tag-Form
 	width: 100%;
 	max-height: 30px;
 	padding: 4px;
-	border-color: #3e3e3ea6;
+	border-style: solid;
+	border-color: #525252c2;
 	background: transparent;
-	color: #3e3e3e;
 	border-radius: 5px;
 	margin-top: 7px;
 	margin-bottom: 5px;
@@ -224,11 +241,12 @@ Label-Tag-Form
 	align-items: center;
 	overflow: hidden;
 	margin-top: 10px;
+	box-shadow: 0 1px 4px #363636e7;
 }
 
 .button.save > img {
 	max-width: 25px;
-	max-height: 60%;
+	max-height: 25px;
 	margin-right: 5px;
 	padding: 2px;
 }
@@ -244,10 +262,9 @@ Label-Tag-Form
 ----------------------------------------------------------------------
 Footer
 */
-
 .footer {
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background: #bdbdbd;
 	display: flex;
 	align-items: center;
@@ -279,16 +296,17 @@ Footer
 	border-radius: 4px;
 	margin-right: 5px;
 	justify-content: center;
+	box-shadow: 0 1px 4px #363636e7;
 }
 
 #saved-states-button__text {
-	font-family: cursive;
-	font-size: 75%;
+	font-family: arial;
+	font-size: 100%;
 	color: white;
 	margin-right: 4px;
 }
 
 .button.saved-states > img {
-	width: 0.8rem;
-	height: 0.8rem;
+	width: 0.9rem;
+	height: 0.9rem;
 }
