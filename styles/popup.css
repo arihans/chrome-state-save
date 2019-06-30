@@ -9,13 +9,17 @@
 Global 
 */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	width: 340px;
 	min-width: 275px;
 	max-height: 450px;
-	background-color: #dadadaff;
+	background-color: #f1f1f1;
 	overflow: hidden;
-	position: fixed;
 	color: black;
 	padding: 7px;
 	box-shadow: 0 0 10px #363636;
@@ -33,7 +37,15 @@ body {
 ::placeholder {
 	font-family: arial;
 	font-size: 12px;
-	color: #525252;
+	color: #525252c0;
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #d8d8d8d7;
 }
 
 /* 
@@ -46,11 +58,13 @@ Header
 	justify-content: space-between;
 	align-items: center;
 	max-width: 100%;
-	max-height: 40px;
+	max-height: 50px;
 	overflow: hidden;
 	margin-top: 4px;
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 	color: #313131;
+	border-bottom: 2px solid #d8d8d8;
+	padding-bottom: 10px;
 }
 
 .header__logo-text {
@@ -68,21 +82,9 @@ Header
 }
 
 .header__text {
-	font-family: sans-serif;
-	font-size: 100%;
+	font-family: monospace;
+	font-size: 1.5em;
 	text-align: center;
-	height: 100%;
-	width: 100%;
-}
-
-#close-popup {
-	max-width: 35px;
-	height: 100%;
-}
-
-#close-popup > img {
-	width: 95%;
-	height: 95%;
 }
 
 /* 
@@ -91,8 +93,9 @@ Date-Time
 */
 .date-time {
 	position: relative;
+	width: 80%;
+	height: 32px;
 	display: flex;
-	margin-right: 30px;
 	margin-left: 3px;
 	align-items: center;
 	margin-bottom: 12px;
@@ -100,9 +103,8 @@ Date-Time
 
 .date-time-box {
 	position: relative;
-	max-height: 20px;
-	width: auto;
-	background: #f4f4f4c7;
+	height: 80%;
+	background: #f6f6f6;
 	display: flex;
 	overflow: hidden;
 	border-radius: 0px 4px 4px 0px;
@@ -113,19 +115,24 @@ Date-Time
 }
 
 .date-time__icon-box {
+	height: 30px;
+	width: 30px;
 	padding: 2px;
 	background-color: #79c497;
+	align-items: center;
 }
 
 .date-time__icon-box > img {
 	max-width: 100%;
 	max-height: 20px;
+	vertical-align: middle;
 }
 
 .date-time__text {
 	font-family: Arial;
-	font-size: 80%;
+	font-size: 1.15em;
 	text-align: center;
+	vertical-align: middle;
 	color: #505050;
 	width: 100%;
 	padding: 3px;
@@ -138,6 +145,7 @@ Open-Tabs-ScrollBar
 */
 #open-tabs-scrollbar {
 	min-width: 100%;
+	max-height: 50%;
 	background-color: #ffffff;
 	overflow-y: scroll;
 	display: flex;
@@ -199,6 +207,15 @@ Open-Tabs-ScrollBar
 	width: auto;
 }
 
+#no-tab {
+	position: relative;
+	max-width: 95%;
+	max-height: 50px;
+	align-content: center;
+	background-color: #fffc5d;
+	text-size-adjust: 20px;
+}
+
 /* 
 ----------------------------------------------------------------------
 Label-Tag-Form
@@ -223,10 +240,10 @@ Label-Tag-Form
 	width: 100%;
 	max-height: 30px;
 	padding: 4px;
-	border-style: solid;
-	border-color: #525252c2;
+	padding-left: 10px;
+	border: 1px solid #c2c2c2;
 	background: transparent;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin-top: 7px;
 	margin-bottom: 5px;
 }
@@ -252,7 +269,7 @@ Label-Tag-Form
 }
 
 #save-button__text {
-	font-family: arial;
+	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 100%;
 	color: #dbdbdb;
@@ -265,18 +282,20 @@ Footer
 .footer {
 	width: 100%;
 	height: 60px;
-	background: #bdbdbd;
+	background: inherit;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	border-top: 2px solid #d8d8d8;
 	padding: 5px;
 	padding-top: 7px;
 	padding-bottom: 7px;
 }
 
 .button.settings {
-	max-width: 37px;
+	max-width: 25px;
 	overflow: hidden;
+	margin-left: 4px;
 }
 
 .button.settings > img {

@@ -6,8 +6,12 @@
 	"description": "An app to record the list of all open tabs in the browser. So that you can visit them later.",
 
 	"browser_action": {
-		"default_popup": "/views/popup.html"
+		"default_popup": "views/popup.html"
 	},
 
-	"permissions": ["storage", "tabs"]
+	"permissions": ["storage", "tabs"],
+
+	"background": {
+		"scripts": ["javascript/background.js"]
+	}
 }
