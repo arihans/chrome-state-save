@@ -9,7 +9,9 @@
 		"default_popup": "views/popup.html"
 	},
 
-	"permissions": ["storage", "tabs"],
+	"permissions": ["storage", "tabs", "chrome://favicon/"],
+
+	"content_security_policy": "img-src * 'self' chrome://favicon",
 
 	"background": {
 		"scripts": ["javascript/background.js"]
