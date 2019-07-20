@@ -130,12 +130,10 @@ var formHandler = async () => {
 
 //_______________________________________________________________
 
-
 // Open-Tab Remove
-var tabRemove = () => {
-	
-};
+// var tabRemove = () => {
 
+// };
 
 // Event-Listeners ______________________________________________
 // ENTRY --------------------------------
@@ -151,8 +149,8 @@ document.getElementById("save-button").onclick = () => {
 	storage();
 };
 
-document.getElementsByClassName("button tab-close").onclick = () {
-	tabRemove();
-}
+// document.getElementsByClassName("button tab-close").onclick = () {
+// 	tabRemove();
+// }
 //---------------------------------------
 //_______________________________________________________________
